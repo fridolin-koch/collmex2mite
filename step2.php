@@ -28,8 +28,9 @@ echo '<?xml version="1.0" encoding="UTF-8"?>'
 		</thead>
 <?php
 require_once 'lib/Mite/Mite.php';
+require_once './config.php';
 // instantiate the object with your credentials
-$mite = new Mite\Mite('https://airmotion.mite.yo.lk', '9163f83ab1bebcb');
+$mite = new Mite\Mite($miteConfig['endpoint'], $miteConfig['apiKey']);
 
 foreach($_POST['data'] as $rowNbr => $row)	{
 	$fields = unserialize(base64_decode($row));

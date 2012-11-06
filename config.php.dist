@@ -1,0 +1,4 @@
+<?php
+
+$miteConfig['endpoint']	= 'YOUR-MITE-API-ENDPOINT';
+$miteConfig['apiKey'] 	= 'YOUR-MITE-API-KEY';
